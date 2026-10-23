@@ -24,7 +24,7 @@
 # Unity YAML (requires Asset Serialization Mode = Force Text).
 # merge=unityyamlmerge routes merges through Unity's Smart Merge tool (UnityYAMLMerge),
 # which understands scene/prefab structure. EVERY developer must register the driver
-# once in their git config (Handbook, lecture 4.2: Version control):
+# once in their git config (lecture 4.2: Version control):
 #
 #   git config --global merge.unityyamlmerge.name "Unity SmartMerge (UnityYAMLMerge)"
 #   git config --global merge.unityyamlmerge.driver "'<path-to>/UnityYAMLMerge' merge -h -p --force %O %B %A %A"
