@@ -1,0 +1,28 @@
+<Project>
+  <!--
+    Shared settings for every project in csharp-basics.
+
+    WHY LangVersion 9.0:
+      Unity 6 compiles C# 9 (against a .NET Standard 2.1 / Unity-specific API profile).
+      The .NET 8 compiler would happily accept C# 10-12 features (file-scoped namespaces,
+      global usings, record structs, raw string literals, required members, primary
+      constructors...). If learners get used to those here, their code will not compile
+      in Unity. Pinning LangVersion makes the compiler reject them.
+
+    WHY ImplicitUsings is disabled:
+      Implicit usings are generated as `global using` directives, a C# 10 feature.
+      With LangVersion 9.0 they would break the build. Write your usings explicitly,
+      exactly like you will in Unity.
+
+    CAVEAT: LangVersion restricts the *language*, not the *library*. net8.0 has APIs
+    that Unity's profile lacks (e.g. Random.Shared, Enumerable.Chunk, newer Span helpers).
+    If you copy code into Unity and an API is missing, that is why.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+</Project>

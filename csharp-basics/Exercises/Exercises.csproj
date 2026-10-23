@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- TargetFramework / LangVersion come from ../Directory.Build.props (net8.0 + C# 9 to match Unity). -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CSharpBasics.Exercises</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The checks are shared with the Solutions project so both are graded identically. -->
+    <Compile Include="..\Shared\**\*.cs" Link="Shared\%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

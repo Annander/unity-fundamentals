@@ -1,0 +1,87 @@
+# ---------------------------------------------------------------------------
+# Line endings: normalise text to LF in the repository; Git converts on checkout
+# according to each developer's core.autocrlf / platform.
+# ---------------------------------------------------------------------------
+* text=auto
+
+# Code
+*.cs        text diff=csharp
+*.csproj    text
+*.sln       text eol=crlf
+*.props     text
+*.asmdef    text
+*.asmref    text
+*.json      text
+*.md        text
+*.shader    text
+*.hlsl      text
+*.cginc     text
+*.uss       text
+*.uxml      text
+*.inputactions text
+
+# ---------------------------------------------------------------------------
+# Unity YAML (requires Asset Serialization Mode = Force Text).
+# merge=unityyamlmerge routes merges through Unity's Smart Merge tool (UnityYAMLMerge),
+# which understands scene/prefab structure. EVERY developer must register the driver
+# once in their git config (Handbook, lecture 4.2: Version control):
+#
+#   git config --global merge.unityyamlmerge.name "Unity SmartMerge (UnityYAMLMerge)"
+#   git config --global merge.unityyamlmerge.driver "'<path-to>/UnityYAMLMerge' merge -h -p --force %O %B %A %A"
+#   git config --global merge.unityyamlmerge.recursive binary
+#
+# UnityYAMLMerge ships with the Editor:
+#   Windows: <Editor>\Data\Tools\UnityYAMLMerge.exe
+#   macOS:   <Unity.app>/Contents/Tools/UnityYAMLMerge
+# The exact flags are documented in the Unity Manual ("Smart merge"); check them for your version.
+# linguist-generated hides these from GitHub diffs/language stats by default.
+# ---------------------------------------------------------------------------
+*.unity           text eol=lf merge=unityyamlmerge linguist-generated
+*.prefab          text eol=lf merge=unityyamlmerge linguist-generated
+*.asset           text eol=lf merge=unityyamlmerge linguist-generated
+*.mat             text eol=lf merge=unityyamlmerge linguist-generated
+*.anim            text eol=lf merge=unityyamlmerge linguist-generated
+*.controller      text eol=lf merge=unityyamlmerge linguist-generated
+*.overrideController text eol=lf merge=unityyamlmerge linguist-generated
+*.physicMaterial  text eol=lf merge=unityyamlmerge linguist-generated
+*.playable        text eol=lf merge=unityyamlmerge linguist-generated
+*.mask            text eol=lf merge=unityyamlmerge linguist-generated
+*.brush           text eol=lf merge=unityyamlmerge linguist-generated
+*.flare           text eol=lf merge=unityyamlmerge linguist-generated
+*.fontsettings    text eol=lf merge=unityyamlmerge linguist-generated
+*.guiskin         text eol=lf merge=unityyamlmerge linguist-generated
+*.giparams        text eol=lf merge=unityyamlmerge linguist-generated
+*.renderTexture   text eol=lf merge=unityyamlmerge linguist-generated
+*.spriteatlas     text eol=lf merge=unityyamlmerge linguist-generated
+*.terrainlayer    text eol=lf merge=unityyamlmerge linguist-generated
+*.lighting        text eol=lf merge=unityyamlmerge linguist-generated
+*.meta            text eol=lf
+ProjectSettings/*.asset text eol=lf merge=unityyamlmerge
+
+# ---------------------------------------------------------------------------
+# Binary files: no line-ending conversion, no text diff, no merge attempts.
+# ---------------------------------------------------------------------------
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.tga  binary
+*.tif  binary
+*.tiff binary
+*.psd  binary
+*.exr  binary
+*.hdr  binary
+*.fbx  binary
+*.blend binary
+*.wav  binary
+*.mp3  binary
+*.ogg  binary
+*.mp4  binary
+*.ttf  binary
+*.otf  binary
+*.dll  binary
+*.so   binary
+*.dylib binary
+*.zip  binary
+*.unitypackage binary
+*.bin  binary
