@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/CourseDemos/ClickToMoveDemo.unity
+    guid: c95fd5564e5c37843af0736ab513034c
+  - enabled: 1
+    path: Assets/CourseDemos/1.1_Boot.unity
+    guid: 2fa419f983ad35a4c9be4956058738c4
+  - enabled: 1
+    path: Assets/CourseDemos/1.1_Architecture.unity
+    guid: 224af091a565bd944abdad6141fc9e35
+  - enabled: 1
+    path: Assets/CourseDemos/2.1_GameObjectComponent.unity
+    guid: 08c4f085b5512ec4189cf741e86a15a8
+  - enabled: 1
+    path: Assets/CourseDemos/2.2_EditorTools.unity
+    guid: 3893a0675ed720d41acdca9b32000ed9
+  - enabled: 1
+    path: Assets/CourseDemos/InputMoverDemo.unity
+    guid: 82dc47b8942c1364a940551eb6d93028
+  - enabled: 1
+    path: Assets/CourseDemos/3.1_Localization.unity
+    guid: 1c1f18a86eb4d1643a4ad64653e88903
+  - enabled: 1
+    path: Assets/CourseDemos/3.2_RuntimeBestPractices.unity
+    guid: 5138ad7b992eed348989dab8faa9722d
+  - enabled: 1
+    path: Assets/CourseDemos/4.2_EditorLies.unity
+    guid: 1558938bccfac674292cdbacdb08adb5
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: c174e389115b52744832564b9cbeaf73, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 062b1e911187f184eacb36538fa8adc7, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 254f61a170d50c04eb742ee87f2525e7, type: 3}
+    com.unity.localization.settings: {fileID: 11400000, guid: f35ba7d6df92fcd449687c748d1c7b43, type: 2}
