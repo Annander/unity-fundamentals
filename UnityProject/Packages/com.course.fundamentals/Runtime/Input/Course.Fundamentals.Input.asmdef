@@ -1,0 +1,16 @@
+{
+    "name": "Course.Fundamentals.Input",
+    "rootNamespace": "Course.Fundamentals.InputSamples",
+    "references": [
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

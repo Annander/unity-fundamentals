@@ -1,0 +1,30 @@
+{
+  "name": "com.course.fundamentals",
+  "version": "0.1.0",
+  "displayName": "Course Fundamentals",
+  "description": "Sample code for the Unity + C# fundamentals course: lifecycle, components, ScriptableObject channels, runtime best practices, and small samples for Input System, AI Navigation and Localization.",
+  "unity": "6000.0",
+  "author": {
+    "name": "Game Team Training"
+  },
+  "keywords": [
+    "training",
+    "samples",
+    "best-practices"
+  ],
+  "dependencies": {
+    "com.unity.ai.navigation": "2.0.5",
+    "com.unity.inputsystem": "1.11.2",
+    "com.unity.localization": "1.5.3",
+    "com.unity.modules.ai": "1.0.0",
+    "com.unity.modules.animation": "1.0.0",
+    "com.unity.modules.physics": "1.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "Getting Started",
+      "description": "A tiny script that wires Health, a GameEventChannel and the LifecycleLogger together. Import it, then follow the setup in its class comment.",
+      "path": "Samples~/GettingStarted"
+    }
+  ]
+}

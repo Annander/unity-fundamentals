@@ -1,0 +1,17 @@
+{
+    "name": "Course.Fundamentals.Navigation",
+    "rootNamespace": "Course.Fundamentals.Navigation",
+    "references": [
+        "Unity.InputSystem",
+        "Unity.AI.Navigation"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
