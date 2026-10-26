@@ -6,8 +6,7 @@ namespace CSharpBasics.Examples
 {
     public static class GarbageCollection
     {
-        // Results are written to static "sinks" so the JIT can't prove the objects don't escape
-        // and optimise the allocation away (newer .NET runtimes can do that; Unity's can't).
+        // Results are written to static "sinks" so the JIT can't prove the objects don't escape and optimise the allocation away (newer .NET runtimes can do that; Unity's can't).
         private static object s_sink;
         private static int s_intSink;
 
